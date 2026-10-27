@@ -8,6 +8,12 @@
     "build": "tsc && vp build",
     "preview": "vp preview",
     "tauri": "tauri",
+    "dev:blaze": "tauri dev --runner cargo-blaze",
+    "blaze:build": "cargo blaze build --manifest-path src-tauri/Cargo.toml",
+    "blaze:check": "cargo blaze check --manifest-path src-tauri/Cargo.toml",
+    "blaze:test": "cargo blaze test --manifest-path src-tauri/Cargo.toml",
+    "blaze:status": "cargo blaze status",
+    "blaze:stop": "cargo blaze stop",
     "prepare": "vp config"
   },
   "dependencies": {
